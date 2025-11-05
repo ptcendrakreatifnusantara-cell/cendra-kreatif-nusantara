@@ -1,0 +1,671 @@
+// ==========================================================
+// DATA SIMULASI PRODUK (Diperbarui dengan Kategori Baru)
+// ==========================================================
+const PRODUCTS = {
+    // PATTERN SERIES
+    'Tumbler': { 
+        name: 'Tumbler', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr kps1.png', 'fp baru/tmblr kps2.png', 'fp baru/tmblr kps3.png'],
+        specs: ['2 kompartemen', 'Pengait besi', 'Branding Sablon', 'Material: Stainless Steel'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tumbler 02': { 
+        name: 'Tumbler 02', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr ckt1.png', 'fp baru/tmblr ckt2.png', 'fp baru/tmblr ckt3.png'],
+        specs: ['Desain Elegan', 'Material: Stainless Steel', 'Kapasitas: 500ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'Tumbler 03': { 
+        name: 'Tumbler 03', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr pnk1.png', 'fp baru/tmblr pnk2.png', 'fp baru/tmblr pnk3.png'],
+        specs: ['Desain Etnik', 'Material: Stainless Steel', 'Kapasitas: 600ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tumbler 04': { 
+        name: 'Tumbler 04', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr sdt1.png', 'fp baru/tmblr sdt2.png',],
+        specs: ['Desain Modern', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'Tumbler 05': { 
+        name: 'Tumbler 05', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr kcl1.png', 'fp baru/tmblr kcl2.png', 'fp baru/tmblr kcl3.png'],
+        specs: ['Desain Minimalis', 'Material: Stainless Steel', 'Kapasitas: 500ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tumbler 06': { 
+        name: 'Tumbler 06', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr pth1.png', 'fp baru/tmblr pth2.png', 'fp baru/tmblr pth3.png'],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 600ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tmblr 07': {
+        name: 'Tumbler 07', 
+        category: 'Tumbler',
+        images: ['fp baru/tmbtr bnig1.png'],
+        specs: ['Desain Unik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tmblr 08': { 
+        name: 'Tumbler 08', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr wrwn1.png', 'fp baru/tmblr wnwr2.png'],
+        specs: ['Desain Etnik', 'Material: Stainless Steel', 'Kapasitas: 600ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tmblr 09': { 
+        name: 'Tumbler 09', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr ttph1.png', 'fp baru/tmblr ttph2.png', 'fp baru/tmblr ttph3.png'],
+        specs: ['Desain Modern', 'Material: Stainless Steel', 'Kapasitas: 500ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tmblr 10': { 
+        name: 'Tumbler 10', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr ttpgl1.png', 'fp baru/tmblr ttpgl2.png'],
+        specs: ['Desain Ceria', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'Tmblr 11': { 
+        name: 'Tumbler 11', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr ttpbl1.png', 'fp baru/tmblr ttpbl2.png', 'fp baru/tmblr ttpbl3.png'],
+        specs: ['Desain Elegan', 'Material: Stainless Steel', 'Kapasitas: 600ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tumbler 12': { 
+        name: 'Tumbler 12', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr mr1.png', 'fp baru/tmblr mr2.png', 'fp baru/tmblr mr3.png'],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 500ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tumbler 13': { 
+        name: 'Tumbler 13', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr htm1.png', 'fp baru/tmblr htm2.png', 'fp baru/tmblr htm3.png'],
+        specs: ['Desain Modern', 'Material: Stainless Steel', 'Kapasitas: 500ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tumbler 14': { 
+        name: 'Tumbler 14', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr hj3.png', 'fp baru/tmblr hj2.png', 'fp baru/tmblr hj1.png'],
+        specs: ['Desain Minimalis', 'Material: Stainless Steel', 'Kapasitas: 600ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tumbler 15': { 
+        name: 'Tumbler 15', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr hand1.png' , 'fp baru/tmblr hand2.png', 'fp baru/tmblr hand3.png'],
+        specs: ['Desain Unik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tumbler 16': { 
+        name: 'Tumbler 16', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr gngn1.png', 'fp baru/tmblr gtgn2.png', 'fp baru/tmblr gtgn3.png'],
+        specs: ['Desain Ceria', 'Material: Stainless Steel', 'Kapasitas: 600ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tumbler 17': { 
+        name: 'Tumbler 17', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr bwlng1.png', 'fp baru/tmblr bwlng2.png', 'fp baru/tmblr bwlng3.png'],
+        specs: ['Desain Etnik', 'Material: Stainless Steel', 'Kapasitas: 500ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tumbler 18': { 
+        name: 'Tumbler 18', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr br1.png', 'fp baru/tmblr br2.png',],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    
+    'Handbag': { 
+        name: 'Handbag', 
+        category: 'Handbag',
+        images: ['fp/handbag.png', 'fp/handbag2.png', 'fp/handbag3.png'],
+        specs: ['2 kompartemen di bagian depan', 'Pengait besi', 'Branding Emboss, Laser', 'Material: Kulit Sintetis Premium'],
+        categoryLink: 'product-list.html?category=handbag'
+    },
+    'Emoney': { 
+        name: 'EMONEY', 
+        category: 'Emoney',
+        images: ['fp/EMONEY.png', 'fp/EMONEY2.png', 'fp/EMONEY3.png'],
+        specs: ['Tempat Kartu E-Money', 'Desain Etnik', 'Material: PVC Tebal'],
+        categoryLink: 'product-list.html?category=Emoney'
+    },
+    'Payung':{
+        name: 'Payung', 
+        category: 'payung',
+        images: ['fp/payung.png', 'fp/payung2.png', 'fp/payung3.png'],
+        specs: ['Payung Lipat Otomatis', 'Desain Etnik', 'Material: Kain Tahan Air'],
+        categoryLink: 'product-list.html?category=payung'
+    },
+    'pulpen': { 
+        name: 'Pulpen', 
+        category: 'pulpen',
+        images: ['fp/pen.png', 'fp/pen2.png', 'fp/pen3.png'],
+        specs: ['Pulpen Ballpoint', 'Material: Plastik dan Logam', 'Tinta: Biru'],
+        categoryLink: 'product-list.html?category=pulpen'
+    },
+    'Giftset 01': {
+        name: 'Giftset 01',
+        category: 'Hardbox',
+        images: ['fp/gifset1.png', 'fp/gifset2.png', 'fp/gifset3.png'],
+        specs: ['Set Hadiah Eksklusif', 'Isi: Tumbler, Pulpen, Notebook', 'Kemasan: Hardbox Premium'],
+        categoryLink: 'product-list.html?category=Hardbox'
+    },
+
+    'giftset 02': {
+        name: 'Giftset 02',
+        category: 'Hardbox',
+        images: ['fp/giftsetbox2.png',],
+        specs: ['Set Hadiah Elegan', 'Isi: Handbag, Payung, Emoney', 'Kemasan: Hardbox Eksklusif'],
+        categoryLink: 'product-list.html?category=Hardbox'
+    },
+    'giftset 03': {
+        name: 'Giftset 03',
+        category: 'Hardbox',
+        images: ['fp/giftset3.png', 'fp/giftset3-2.png', 'fp/giftset3-3.png'],
+        specs: ['Set Hadiah Mewah', 'Isi: Tumbler, Handbag, Pulpen, Payung', 'Kemasan: Hardbox Mewah'],
+        categoryLink: 'product-list.html?category=Hardbox'
+    },
+     'Giftset 04': { 
+        name: 'Giftset 04', 
+        category: 'Hardbox',
+        images: ['fp/gfst pg1.png', 'fp/gfst pg2.png', 'fp/gfst pg3.png'],
+        specs: ['Set Hadiah Eksklusif', 'Isi: PowerBank, Jam Meja', 'Kemasan: Hardbox Premium']
+    },
+    'giftset 05': {
+        name: 'Giftset 05',
+        category: 'Hardbox',
+        images: ['fp baru/gfst ptmna1.png', 'fp baru/gfst ptmna2.png', 'fp baru/gfst ptmna3.png'],
+        specs: ['Set Hadiah Premium', 'Isi: Tumbler, Handbag, Emoney', 'Kemasan: Hardbox Eksklusif'],
+        categoryLink: 'product-list.html?category=Hardbox'
+    },
+    'giftset 06': {
+        name: 'Giftset 06',
+        category: 'Hardbox',
+        images : ['fp baru/gfst ag pen1.png', ],
+        specs : ['Set Hadiah Elegan', 'Isi: Agenda, Pulpen, Payung', 'Kemasan: Hardbox Mewah'],
+        categoryLink: 'product-list.html?category=Hardbox'
+    },
+    'giftset 07': {
+        name: 'Giftset 07',
+        category: 'Hardbox',
+        images: ['fp baru/gfst 3itm1.png', ],
+        specs: ['Set Hadiah Eksklusif', 'Isi: Tumbler, Handbag, PowerBank', 'Kemasan: Hardbox Premium'],
+        categoryLink: 'product-list.html?category=Hardbox'
+    },
+    'giftset 08': {
+        name: 'Giftset 08',
+        category: 'Hardbox',
+        images: ['fp baru/gfst 2itm 1.png', ],
+        specs: ['Set Hadiah Spesial', 'Isi: Tumbler, Handbag, Pulpen', 'Kemasan: Hardbox Spesial'],
+        categoryLink: 'product-list.html?category=Hardbox'
+    },
+    'Totebag': { 
+        name: 'Totebag', 
+        category: 'Totebag',
+        images: ['fp/totebag.png', 'fp/totebag2.png', 'fp/totebag3.png'],
+        specs: ['Ukuran Besar', 'Desain Etnik', 'Material: Kanvas Tebal'],
+        categoryLink: 'product-list.html?category=Totebag'
+    },
+    'Pattern Series - Loopy': { 
+        name: 'Pattern Series - Loopy', 
+        category: 'Pattern Series',
+        images: ['fp/loopy.png', 'fp/loopy2.png', 'fp/loopy3.png'],
+        specs: ['Desain Unik Loopy', 'Material: Kanvas Tebal', 'Cocok untuk berbagai keperluan'],
+        categoryLink: 'product-list.html?category=Pattern Series'
+    },
+   
+    // ... produk lainnya
+
+    // Tambahkan produk dummy untuk kategori baru
+    'Agenda': { 
+        name: 'Agenda', 
+        category: 'Agenda',
+        images: ['fp/agenda.png', 'fp/agenda2.png   ', 'fp/agenda3.png'],
+        specs: ['Tas Ransel', 'Kotak Pensil', 'Buku Agenda', 'Material: Poliester'],
+        categoryLink: 'product-list.html?category=Agenda'
+    },
+    'giftbox-premium': { 
+        name: 'Giftbox Premium', 
+        category: 'Hardbox',
+        images: ['fp/Box.png'],
+        specs: ['Gift Box eksklusif', 'Custom logo', 'Cocok untuk event perusahaan'],
+        categoryLink: 'product-list.html?category=Hardbox'
+    },
+    // ... produk lainnya
+};
+
+// Semua slug kategori yang ada di Index.html dan Sidebar
+const ALL_CATEGORY_SLUGS = [
+    'all', 
+    'Tumbler', 
+    'Agenda', 
+    'Emoney', 
+    'Handbag', 
+    'Hardbox', 
+    'pulpen', 
+    'payung', 
+    'Pattern Series',
+    'Totebag',
+];
+
+
+// ==========================================================
+// 1. Fungsi Utama Navigasi & Utility
+// ==========================================================
+
+// Navigasi (Hamburger Menu & Smooth Scrolling sudah bagus)
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+if (hamburger && navMenu) {
+    // ... (Logika Hamburger sudah benar)
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
+}
+
+// Efek scroll pada header (sudah bagus)
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    if (header) {
+        header.classList.toggle('scrolled', window.scrollY > 50);
+    }
+});
+
+// Smooth Scrolling (sudah bagus)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        if (this.getAttribute('href').startsWith('#')) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if(targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if(targetElement) {
+                const headerHeight = document.querySelector('header').offsetHeight || 80;
+                window.scrollTo({
+                    top: targetElement.offsetTop - headerHeight,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    });
+});
+
+
+// Fungsi untuk mendapatkan parameter dari URL (sudah bagus)
+function getQueryParameter(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
+}
+
+// Fungsi untuk memformat slug menjadi judul (Diperbarui untuk casing yang lebih baik)
+function formatSlugToTitle(slug) {
+    if (slug === 'all') return 'All Products';
+    
+    // Kasus khusus
+    const specialCase = {
+        'gift-set': 'Gift Set',
+        'employee-kit': 'Employee Kit',
+        'customer-gift': 'Customer Gift',
+        'luxury-package': 'Luxury Package',
+        'business-kit': 'Business Kit',
+        'student-kit': 'Student Kit',
+        'blue-ethnic': 'Blue Ethnic',
+    };
+
+    if (specialCase[slug]) return specialCase[slug];
+
+    return slug
+        .split('-')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+}
+
+
+// ==========================================================
+// 2. Logika Halaman List (product-list.html)
+// ==========================================================
+
+function renderSidebarCategories(currentCategory) {
+    const sidebarContainer = document.getElementById('sidebar-categories');
+    if (!sidebarContainer) return;
+
+    // Menghilangkan duplikasi kategori umum dan utama
+    const uniqueSlugs = [...new Set(ALL_CATEGORY_SLUGS)];
+
+    sidebarContainer.innerHTML = uniqueSlugs.map(slug => {
+        const title = formatSlugToTitle(slug);
+        const isActive = slug === currentCategory ? 'active' : '';
+        return `
+            <li class="${isActive}">
+                <a href="product-list.html?category=${slug}">${title}</a>
+            </li>
+        `;
+    }).join('');
+}
+// ==========================================================
+// 7. Logika Toggle Filter Mobile
+// ==========================================================
+function initFilterToggle() {
+    const toggleButton = document.querySelector('.filter-toggle-btn');
+    const filterContent = document.querySelector('.filter-content-wrapper');
+
+    if (toggleButton && filterContent) {
+        toggleButton.addEventListener('click', () => {
+            // Menambah/menghapus class 'active' untuk menampilkan/menyembunyikan
+            filterContent.classList.toggle('active');
+            
+            // Opsional: Mengubah teks tombol menjadi "Tutup Filter"
+            const icon = toggleButton.querySelector('i');
+            if (filterContent.classList.contains('active')) {
+                icon.classList.remove('fa-filter');
+                icon.classList.add('fa-times'); // Ikon silang/tutup
+                toggleButton.childNodes[1].nodeValue = ' Tutup Filter'; 
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-filter'); // Ikon filter
+                toggleButton.childNodes[1].nodeValue = ' Filter Produk';
+            }
+        });
+    }
+}
+
+// Panggil fungsi ini saat DOM sudah dimuat
+document.addEventListener('DOMContentLoaded', () => {
+    // ... (Pastikan initFilterToggle dipanggil di sini bersama fungsi inisialisasi lainnya)
+    // Contoh:
+    // handleProductList();
+    // initLogoCarousel(); 
+    initFilterToggle(); 
+});
+
+function handleProductList() {
+    const categoryParam = getQueryParameter('category');
+    const listingTitle = document.getElementById('listing-title');
+    const pageTitle = document.getElementById('page-title');
+    const productGrid = document.getElementById('product-listing-grid');
+
+    if (!listingTitle || !pageTitle || !productGrid) return; 
+
+    let currentCategory = categoryParam || 'all';
+
+    const formattedCategory = currentCategory === 'all' 
+        ? 'Semua Produk' 
+        : formatSlugToTitle(currentCategory);
+    
+    listingTitle.textContent = formattedCategory;
+    pageTitle.textContent = `${formattedCategory} - PT CENDRA KREATIF NUSANTARA`;
+    
+    // 1. Render Sidebar
+    renderSidebarCategories(currentCategory);
+
+    // 2. Filter produk (Logika filter disempurnakan)
+    const filteredProducts = Object.keys(PRODUCTS).filter(id => {
+        const product = PRODUCTS[id];
+        
+        if (currentCategory === 'all') return true;
+        
+        // Cek kategori utama (pattern-series, gift-set, dll)
+        if (product.category === currentCategory) return true;
+        
+        return false;
+    });
+
+    // 3. Generate HTML untuk produk
+    productGrid.innerHTML = filteredProducts.map(id => {
+        const product = PRODUCTS[id];
+        return `
+            <div class="product-card list-card animate">
+                 <a href="product-detail.html?id=${id}" class="product-link">
+                    <div class="product-image">
+                        <img src="${product.images[0]}" alt="${product.name}">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">${product.name}</h3>
+                        <p class="product-description">${formatSlugToTitle(product.category)}</p>
+                    </div>
+                </a>
+                <button class="add-to-cart-btn">+</button>
+            </div>
+        `;
+    }).join('');
+    
+    if (filteredProducts.length === 0) {
+         productGrid.innerHTML = '<p style="grid-column: 1 / -1; text-align: center; padding: 50px;">Belum ada produk untuk kategori ini.</p>';
+    }
+}
+
+
+// ==========================================================
+// 3. Logika Halaman Detail (product-detail.html)
+// ==========================================================
+
+function handleProductDetail() {
+    const productId = getQueryParameter('id');
+    const product = PRODUCTS[productId];
+    
+    if (!product) return; 
+
+    const mainImg = document.getElementById('main-product-img');
+    const productNameElement = document.getElementById('detail-product-name');
+    const pageTitle = document.getElementById('detail-page-title');
+    const thumbnailContainer = document.getElementById('thumbnail-images');
+    const productSpecs = document.getElementById('product-specs');
+    const chatLink1 = document.querySelector('.sales-contact .contact-card:nth-child(1) a.btn-chat');
+    const chatLink2 = document.querySelector('.sales-contact .contact-card:nth-child(2) a.btn-chat');
+
+
+    productNameElement.textContent = `${product.name} - ${formatSlugToTitle(product.category)}`;
+    pageTitle.textContent = `${product.name} - Detail Produk`;
+
+    // 1. Update Galeri Gambar
+    mainImg.src = product.images[0];
+    
+    // 2. Update Thumbnail
+    thumbnailContainer.innerHTML = product.images.map((src, index) => {
+        return `<img src="${src}" alt="Thumbnail ${index + 1}" class="${index === 0 ? 'active-thumb' : ''}">`;
+    }).join('');
+
+    const thumbnails = thumbnailContainer.querySelectorAll('img');
+    thumbnails.forEach(thumb => {
+        thumb.addEventListener('click', () => {
+            mainImg.src = thumb.src;
+            thumbnails.forEach(t => t.classList.remove('active-thumb'));
+            thumb.classList.add('active-thumb');
+        });
+    });
+
+    // 3. Update Spesifikasi
+    productSpecs.innerHTML = product.specs.map(spec => `<li>• ${spec}</li>`).join('');
+
+    // 4. Update Link Kategori
+    const categoryLinkElement = document.querySelector('.product-category-link a');
+    if (categoryLinkElement) {
+        categoryLinkElement.href = product.categoryLink;
+        categoryLinkElement.textContent = formatSlugToTitle(product.category);
+    }
+    
+    // 5. Update Link Chat WhatsApp
+    const chatText = `Halo, saya tertarik dengan produk ${product.name} - ${formatSlugToTitle(product.category)}.`;
+    const encodedChatText = encodeURIComponent(chatText);
+    const waBaseUrl = 'https://wa.me/6289653648383?text=';
+    
+    if (chatLink1) chatLink1.href = `${waBaseUrl}Halo%20Rifa%2C%20${encodedChatText}`;
+}
+
+
+// ==========================================================
+// 4. Eksekusi Berdasarkan Halaman
+// ==========================================================
+
+document.addEventListener('DOMContentLoaded', () => {
+    const path = window.location.pathname;
+    
+    if (path.includes('product-list.html')) {
+        handleProductList();
+    } else if (path.includes('product-detail.html')) {
+        handleProductDetail();
+    }
+});
+
+// ==========================================================
+// 5. Logika Logo Carousel (Auto-Scroll)
+// ==========================================================
+
+function initLogoCarousel() {
+    const logoInner = document.querySelector('.logo-carousel-inner');
+    const logoSlider = document.querySelector('.logo-slider');
+
+    if (logoInner && logoSlider) {
+        // Duplikasi konten logoSlider
+        const clonedSlider = logoSlider.cloneNode(true);
+        
+        // Hapus animasi dari duplikat sementara agar tidak bentrok saat kloning
+        clonedSlider.style.animation = 'none'; 
+        
+        // Tambahkan duplikat ke inner container
+        logoInner.appendChild(clonedSlider);
+
+        // Setelah duplikat ditambahkan, kita tambahkan kembali class logo-slider
+        // yang sudah memiliki animasi (ini penting agar total lebar menjadi 2x)
+        clonedSlider.classList.add('logo-slider');
+    }
+}
+
+// Panggil fungsi saat DOM sudah dimuat
+document.addEventListener('DOMContentLoaded', () => {
+    // ... (Logika handleProductList dan handleProductDetail Anda) ...
+    
+    // Panggil fungsi inisialisasi logo carousel
+    initLogoCarousel(); 
+});
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
+const dotsContainer = document.querySelector('.dots');
+
+let index = 0;
+
+// Create dots
+slides.forEach((_, i) => {
+  const dot = document.createElement('div');
+  dot.classList.add('dot');
+  dot.addEventListener('click', () => goToSlide(i));
+  dotsContainer.appendChild(dot);
+});
+
+const dots = document.querySelectorAll('.dot');
+dots[0].classList.add('active');
+
+function goToSlide(i) {
+  index = i;
+  slider.style.transform = `translateX(-${i * 100}%)`;
+  setActiveDot(i);
+}
+
+function setActiveDot(i) {
+  dots.forEach(dot => dot.classList.remove('active'));
+  dots[i].classList.add('active');
+}
+
+// Auto slide
+setInterval(() => {
+  index = (index + 1) % slides.length;
+  goToSlide(index);
+}, 3500);
+
+// Swipe Support
+let startx = 0;
+
+slider.addEventListener('touchstart', (e) => {
+  startx = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchend', (e) => {
+  const endX = e.changedTouches[0].clientX;
+
+  if (startX > endX + 50) {
+    index = (index + 1) % slides.length;
+  } else if (startX < endX - 50) {
+    index = (index - 1 + slides.length) % slides.length;
+  }
+
+  goToSlide(index);
+});
+
+// ==========================================================
+// 9. Logika Animasi Stacking Carousel (di script.js)
+// ==========================================================
+
+function initPromoCarouselAnimation() {
+    const carousel = document.getElementById('promo-carousel');
+    if (!carousel) return;
+
+    const cards = carousel.querySelectorAll('.promo-card');
+    
+    const updateCardStyles = () => {
+        const scrollLeft = carousel.scrollLeft;
+        const viewportWidth = carousel.clientWidth;
+
+        cards.forEach(card => {
+            const cardStart = card.getBoundingClientRect().left - carousel.getBoundingClientRect().left;
+            
+            // Jarak kartu dari posisi aktif (start/kiri)
+            const distance = Math.abs(cardStart - 20); // 20 adalah padding-left
+            
+            // Normalisasi jarak: 0 (aktif) hingga 1 (jauh dari aktif)
+            const normalizedDistance = Math.min(distance / (viewportWidth * 0.5), 1);
+            
+            // Skala: 1.0 (aktif) turun menjadi 0.9 (tidak aktif)
+            const scale = 1 - (normalizedDistance * 0.1); 
+            
+            // Opacity: 1.0 (aktif) turun menjadi 0.8 (tidak aktif)
+            const opacity = 1 - (normalizedDistance * 0.2); 
+            
+            card.style.transform = `scale(${scale})`;
+            card.style.opacity = opacity;
+            
+            // Atur Z-Index (agar kartu yang aktif selalu di atas)
+            const zIndex = 100 - Math.floor(normalizedDistance * 100);
+            card.style.zIndex = zIndex;
+        });
+    };
+
+    // Panggil saat scroll dan saat load
+    carousel.addEventListener('scroll', updateCardStyles);
+    updateCardStyles(); 
+    window.addEventListener('resize', updateCardStyles);
+}
+
+// Panggil fungsi inisialisasi pada DOMContentLoaded
+document.addEventListener('DOMContentLoaded', () => {
+    // ... (fungsi inisialisasi lainnya yang Anda miliki) ...
+    
+    // Panggil inisialisasi Stacking Carousel
+    initPromoCarouselAnimation();
+});
+
