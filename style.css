@@ -45,16 +45,14 @@ padding: 0 15px;
 /* Buttons */
 .btn {
 display: inline-block;
-padding: 12px 30px;
+padding: 8px 15px;
 background-color: var(--accent-color);
 color: var(--primary-color);
-text-decoration: none;
-border-radius: 4px;
+border-radius: 50px;
 font-weight: 600;
 transition: var(--transition);
-border: none;
 cursor: pointer;
-text-transform: uppercase;
+margin: 2px 0;
 }
 
 .btn:hover {
