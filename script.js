@@ -129,6 +129,13 @@ const PRODUCTS = {
         specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
         categoryLink: 'product-list.html?category=tumbler'
     },
+    'tumbler 18': { 
+        name: 'Tumbler 18', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr bnyk1.png', 'fp baru/tmblr bnyk2.png',],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
     
     'Handbag': { 
         name: 'Handbag', 
@@ -228,6 +235,7 @@ const PRODUCTS = {
         specs: ['Desain Unik Loopy', 'Material: Kanvas Tebal', 'Cocok untuk berbagai keperluan'],
         categoryLink: 'product-list.html?category=Pattern Series'
     },
+    
    
     // ... produk lainnya
 
@@ -517,6 +525,47 @@ function handleProductDetail() {
     
     if (chatLink1) chatLink1.href = `${waBaseUrl}Halo%20Rifa%2C%20${encodedChatText}`;
 }
+function renderRelatedProducts() {
+    console.log("✅ renderRelatedProducts() dipanggil"); // Tambahan penting
+
+    const container = document.getElementById("related-products-grid");
+    if (!container) {
+        console.log("❌ Elemen related-products-grid tidak ditemukan");
+        return;
+    }
+
+    const allProducts = Object.entries(PRODUCTS);
+    if (allProducts.length === 0) {
+        console.log("❌ Data PRODUCTS kosong");
+        return;
+    }
+
+    const shuffled = allProducts.sort(() => 0.5 - Math.random());
+    const selected = shuffled.slice(0, 4);
+
+    container.innerHTML = selected.map(([id, product]) => `
+        <div class="product-card">
+            <a href="product-detail.html?id=${encodeURIComponent(id)}">
+                <div class="product-image">
+                    <img src="${product.images[0]}" alt="${product.name}">
+                </div>
+                <div class="product-info">
+                    <h3>${product.name}</h3>
+                    <p class="product-description">${product.category}</p>
+                </div>
+            </a>
+        </div>
+    `).join("");
+
+    console.log("✅ Produk rekomendasi berhasil dirender:", selected);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (window.location.pathname.includes("product-detail.html")) {
+        console.log("📄 Halaman product-detail terdeteksi");
+        renderRelatedProducts();
+    }
+});
 
 
 // ==========================================================
@@ -668,4 +717,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Panggil inisialisasi Stacking Carousel
     initPromoCarouselAnimation();
 });
-
