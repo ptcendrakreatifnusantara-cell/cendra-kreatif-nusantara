@@ -127,19 +127,14 @@ const PRODUCTS = {
         specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
         categoryLink: 'product-list.html?category=tumbler'
     },
-<<<<<<< HEAD
+    
     'tumbler 19': { 
         name: 'Tumbler 19', 
-=======
-    'tumbler 18': { 
-        name: 'Tumbler 18', 
->>>>>>> 43d148905ae70e3ce29ad70f0374d6c016727abf
         category: 'Tumbler',
         images: ['fp baru/tmblr bnyk1.png', 'fp baru/tmblr bnyk2.png',],
         specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
         categoryLink: 'product-list.html?category=tumbler'
     },
-<<<<<<< HEAD
     'tumbler 20': { 
         name: 'Tumbler 20', 
         category: 'Tumbler',
@@ -265,10 +260,7 @@ const PRODUCTS = {
         images: ['fp baru/tmblr chlo1.png', 'fp baru/tmblr chlo2.png', 'fp baru/tmblr chlo3.png'],
         specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
         categoryLink: 'product-list.html?category=tumbler'    
-    },
-=======
->>>>>>> 43d148905ae70e3ce29ad70f0374d6c016727abf
-    
+    },    
     
     //handbag
 
@@ -482,8 +474,6 @@ const PRODUCTS = {
         categoryLink: 'product-list.html?category=Pattern Series'
     },
     
-<<<<<<< HEAD
-=======
    
     // ... produk lainnya
 
@@ -502,7 +492,6 @@ const PRODUCTS = {
         specs: ['Gift Box eksklusif', 'Custom logo', 'Cocok untuk event perusahaan'],
         categoryLink: 'product-list.html?category=Hardbox'
     },
->>>>>>> 43d148905ae70e3ce29ad70f0374d6c016727abf
     // ... produk lainnya
 };
 
