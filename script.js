@@ -127,13 +127,19 @@ const PRODUCTS = {
         specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
         categoryLink: 'product-list.html?category=tumbler'
     },
+<<<<<<< HEAD
     'tumbler 19': { 
         name: 'Tumbler 19', 
+=======
+    'tumbler 18': { 
+        name: 'Tumbler 18', 
+>>>>>>> 43d148905ae70e3ce29ad70f0374d6c016727abf
         category: 'Tumbler',
         images: ['fp baru/tmblr bnyk1.png', 'fp baru/tmblr bnyk2.png',],
         specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
         categoryLink: 'product-list.html?category=tumbler'
     },
+<<<<<<< HEAD
     'tumbler 20': { 
         name: 'Tumbler 20', 
         category: 'Tumbler',
@@ -260,6 +266,8 @@ const PRODUCTS = {
         specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
         categoryLink: 'product-list.html?category=tumbler'    
     },
+=======
+>>>>>>> 43d148905ae70e3ce29ad70f0374d6c016727abf
     
     
     //handbag
@@ -474,6 +482,27 @@ const PRODUCTS = {
         categoryLink: 'product-list.html?category=Pattern Series'
     },
     
+<<<<<<< HEAD
+=======
+   
+    // ... produk lainnya
+
+    // Tambahkan produk dummy untuk kategori baru
+    'Agenda': { 
+        name: 'Agenda', 
+        category: 'Agenda',
+        images: ['fp/agenda.png', 'fp/agenda2.png   ', 'fp/agenda3.png'],
+        specs: ['Tas Ransel', 'Kotak Pensil', 'Buku Agenda', 'Material: Poliester'],
+        categoryLink: 'product-list.html?category=Agenda'
+    },
+    'giftbox-premium': { 
+        name: 'Giftbox Premium', 
+        category: 'Hardbox',
+        images: ['fp/Box.png'],
+        specs: ['Gift Box eksklusif', 'Custom logo', 'Cocok untuk event perusahaan'],
+        categoryLink: 'product-list.html?category=Hardbox'
+    },
+>>>>>>> 43d148905ae70e3ce29ad70f0374d6c016727abf
     // ... produk lainnya
 };
 
