@@ -1,8 +1,6 @@
-// ==========================================================
 // DATA SIMULASI PRODUK (Diperbarui dengan Kategori Baru)
-// ==========================================================
 const PRODUCTS = {
-    // PATTERN SERIES
+    // Tumbler
     'Tumbler': { 
         name: 'Tumbler', 
         category: 'Tumbler',
@@ -48,7 +46,7 @@ const PRODUCTS = {
     'tmblr 07': {
         name: 'Tumbler 07', 
         category: 'Tumbler',
-        images: ['fp baru/tmbtr bnig1.png'],
+        images: ['fp baru/tmbtr bnig1.png', 'fp baru/tmblr bnig2.png', 'fp baru/tmblr bnig3.png'],
         specs: ['Desain Unik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
         categoryLink: 'product-list.html?category=tumbler'
     },
@@ -129,7 +127,143 @@ const PRODUCTS = {
         specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
         categoryLink: 'product-list.html?category=tumbler'
     },
+    'tumbler 19': { 
+        name: 'Tumbler 19', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr bnyk1.png', 'fp baru/tmblr bnyk2.png',],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tumbler 20': { 
+        name: 'Tumbler 20', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr lt1.png', 'fp baru/tmblr lt2.png','fp baru/tmblr lt3.png'],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+     'tumbler 21': { 
+        name: 'Tumbler 21', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr pthtm1.png', 'fp baru/tmblr pthtm2.png'],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+     'tumbler 22': { 
+        name: 'Tumbler 22', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr three1.png', 'fp baru/tmblr three2.png'],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+     'tumbler 23': { 
+        name: 'Tumbler 23', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr ttpky1.png', 'fp baru/tmblr ttpky2.png', 'fp baru/tmblr ttpky3.png'],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tumbler 24': { 
+        name: 'Tumbler 24', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr ttp wrrn1.png', 'fp baru/tmblr ttp wrrn2.png'],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tumbler 25': { 
+        name: 'Tumbler 25', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr slvrcntln1.png', 'fp baru/tmblr slvrcntln2.png'],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tumbler 26': { 
+        name: 'Tumbler 26', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr slvr1.png', 'fp baru/tmblr slvr2.png'],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tumbler 27': { 
+        name: 'Tumbler 27', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr plstkchlo1.png', 'fp baru/tmblr plstkchlo2.png'],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tumbler 28': { 
+        name: 'Tumbler 28', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr plstk1.png'],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tumbler 29': { 
+        name: 'Tumbler 29', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr plstk1.png'],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+    'tumbler 30': { 
+        name: 'Tumbler 30', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr mrh1.png', 'fp baru/tmblr mrh2.png', 'fp baru/tmblr mrh3.png'],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+        'tumbler 31': { 
+        name: 'Tumbler 31', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr metalik1.png', 'fp baru/tmblr metalik2.png'],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+        'tumbler 32': { 
+        name: 'Tumbler 32', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr listmrh1.png', 'fp baru/tmblr listmrh2.png', 'fp baru/tmblr listmrh3.png'],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+        'tumbler 33': { 
+        name: 'Tumbler 33', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr krktr1.png', 'fp baru/tmblr krktr2.png'],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+        'tumbler 34': { 
+        name: 'Tumbler 34', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr gld1.png', 'fp baru/tmblr gld2.png', 'fp baru/tmblr gld3.png'],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+        'tumbler 35': { 
+        name: 'Tumbler 35', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr fullblck1.png', 'fp baru/tmblr fullblck2.png', 'fp baru/tmblr fullblck3.png'],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+        'tumbler 36': { 
+        name: 'Tumbler 36', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr cntln1.png', 'fp baru/tmblr cntln2.png'],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'
+    },
+        'tumbler 37': { 
+        name: 'Tumbler 37', 
+        category: 'Tumbler',
+        images: ['fp baru/tmblr chlo1.png', 'fp baru/tmblr chlo2.png', 'fp baru/tmblr chlo3.png'],
+        specs: ['Desain Artistik', 'Material: Stainless Steel', 'Kapasitas: 550ml'],
+        categoryLink: 'product-list.html?category=tumbler'    
+    },
     
+    
+    //handbag
+
     'Handbag': { 
         name: 'Handbag', 
         category: 'Handbag',
@@ -137,6 +271,9 @@ const PRODUCTS = {
         specs: ['2 kompartemen di bagian depan', 'Pengait besi', 'Branding Emboss, Laser', 'Material: Kulit Sintetis Premium'],
         categoryLink: 'product-list.html?category=handbag'
     },
+
+    //emoney
+
     'Emoney': { 
         name: 'EMONEY', 
         category: 'Emoney',
@@ -144,6 +281,9 @@ const PRODUCTS = {
         specs: ['Tempat Kartu E-Money', 'Desain Etnik', 'Material: PVC Tebal'],
         categoryLink: 'product-list.html?category=Emoney'
     },
+
+    //payung
+
     'Payung':{
         name: 'Payung', 
         category: 'payung',
@@ -151,6 +291,9 @@ const PRODUCTS = {
         specs: ['Payung Lipat Otomatis', 'Desain Etnik', 'Material: Kain Tahan Air'],
         categoryLink: 'product-list.html?category=payung'
     },
+
+    //pulpen
+
     'pulpen': { 
         name: 'Pulpen', 
         category: 'pulpen',
@@ -158,10 +301,13 @@ const PRODUCTS = {
         specs: ['Pulpen Ballpoint', 'Material: Plastik dan Logam', 'Tinta: Biru'],
         categoryLink: 'product-list.html?category=pulpen'
     },
+
+    //gifset
+
     'Giftset 01': {
         name: 'Giftset 01',
         category: 'Hardbox',
-        images: ['fp/gifset1.png', 'fp/gifset2.png', 'fp/gifset3.png'],
+        images: ['fp baru/gfst blck1.png', 'fp baru/gfst blck2.png', 'fp baru/gfst blck3.png'],
         specs: ['Set Hadiah Eksklusif', 'Isi: Tumbler, Pulpen, Notebook', 'Kemasan: Hardbox Premium'],
         categoryLink: 'product-list.html?category=Hardbox'
     },
@@ -176,7 +322,7 @@ const PRODUCTS = {
     'giftset 03': {
         name: 'Giftset 03',
         category: 'Hardbox',
-        images: ['fp/giftset3.png', 'fp/giftset3-2.png', 'fp/giftset3-3.png'],
+        images: ['fp/giftset3.png',],
         specs: ['Set Hadiah Mewah', 'Isi: Tumbler, Handbag, Pulpen, Payung', 'Kemasan: Hardbox Mewah'],
         categoryLink: 'product-list.html?category=Hardbox'
     },
@@ -214,6 +360,103 @@ const PRODUCTS = {
         specs: ['Set Hadiah Spesial', 'Isi: Tumbler, Handbag, Pulpen', 'Kemasan: Hardbox Spesial'],
         categoryLink: 'product-list.html?category=Hardbox'
     },
+
+    // agenda
+    'Agenda': { 
+        name: 'NoteBook', 
+        category: 'Agenda',
+        images: ['fp baru/notebook easy1.png', 'fp baru/notebook easy2.png'],
+        specs: ['Tas Ransel', 'Kotak Pensil', 'Buku Agenda', 'Material: Poliester'],
+        categoryLink: 'product-list.html?category=Agenda'
+    },
+    'Agenda 1': { 
+        name: 'NoteBook 1', 
+        category: 'Agenda',
+        images: ['fp baru/notebook ckt1.png', 'fp baru/notebook ckt2.png', 'fp baru/notebook ckt3.png'],
+        specs: ['Tas Ransel', 'Kotak Pensil', 'Buku Agenda', 'Material: Poliester'],
+        categoryLink: 'product-list.html?category=Agenda'
+    },
+    'Agenda 2': { 
+        name: 'agenda 2', 
+        category: 'Agenda',
+        images: ['fp baru/agenda wrwn1.png', 'fp baru/agenda wrwn2.png', 'fp baru/agenda wrwn3.png'],
+        specs: ['Tas Ransel', 'Kotak Pensil', 'Buku Agenda', 'Material: Poliester'],
+        categoryLink: 'product-list.html?category=Agenda'
+    },
+    'Agenda 3': { 
+        name: 'agenda 3', 
+        category: 'Agenda',
+        images: ['fp baru/agenda tkstr ky1.png', 'fp baru/agenda tkstr ky2.png', 'fp baru/agenda tkstr ky3.png'],
+        specs: ['Tas Ransel', 'Kotak Pensil', 'Buku Agenda', 'Material: Poliester'],
+        categoryLink: 'product-list.html?category=Agenda'
+    },
+    'Agenda 4': { 
+        name: 'agenda 4', 
+        category: 'Agenda',
+        images: ['fp baru/agenda ornge1.png', 'fp baru/agenda ornge2.png', 'fp baru/agenda ornge3.png'],
+        specs: ['Tas Ransel', 'Kotak Pensil', 'Buku Agenda', 'Material: Poliester'],
+        categoryLink: 'product-list.html?category=Agenda'
+    },
+    'Agenda 5': { 
+        name: 'agenda 5', 
+        category: 'Agenda',
+        images: ['fp baru/agenda nvy1.png', 'fp baru/agenda nvy2.png', 'fp baru/agenda nvy3.png'],
+        specs: ['Tas Ransel', 'Kotak Pensil', 'Buku Agenda', 'Material: Poliester'],
+        categoryLink: 'product-list.html?category=Agenda'
+    },
+    'Agenda 6': { 
+        name: 'agenda 6', 
+        category: 'Agenda',
+        images: ['fp baru/agenda list1.png', 'fp baru/agenda list2.png', 'fp baru/agenda list3.png'],
+        specs: ['Tas Ransel', 'Kotak Pensil', 'Buku Agenda', 'Material: Poliester'],
+        categoryLink: 'product-list.html?category=Agenda'
+    },
+    'Agenda 7': { 
+        name: 'agenda 7', 
+        category: 'Agenda',
+        images: ['fp baru/agenda ky1.png', 'fp baru/agenda ky2.png', 'fp baru/agenda ky3.png'],
+        specs: ['Tas Ransel', 'Kotak Pensil', 'Buku Agenda', 'Material: Poliester'],
+        categoryLink: 'product-list.html?category=Agenda'
+    },
+    'Agenda 8': { 
+        name: 'agenda 8', 
+        category: 'Agenda',
+        images: ['fp baru/agenda krt1.png', 'fp baru/agenda krt2.png', 'fp baru/agenda krt3.png'],
+        specs: ['Tas Ransel', 'Kotak Pensil', 'Buku Agenda', 'Material: Poliester'],
+        categoryLink: 'product-list.html?category=Agenda'
+    },
+    'Agenda 9': { 
+        name: 'agenda 9', 
+        category: 'Agenda',
+        images: ['fp baru/agenda klt1.png', 'fp baru/agenda klt2.png', 'fp baru/agenda klt3.png'],
+        specs: ['Tas Ransel', 'Kotak Pensil', 'Buku Agenda', 'Material: Poliester'],
+        categoryLink: 'product-list.html?category=Agenda'
+    },
+    'Agenda 10': { 
+        name: 'agenda 10', 
+        category: 'Agenda',
+        images: ['fp baru/agenda htm1.png', 'fp baru/agenda htm2.png', 'fp baru/agenda htm3.png'],
+        specs: ['Tas Ransel', 'Kotak Pensil', 'Buku Agenda', 'Material: Poliester'],
+        categoryLink: 'product-list.html?category=Agenda'
+    },
+    'Agenda 11': { 
+        name: 'agenda 11', 
+        category: 'Agenda',
+        images: ['fp baru/agenda coklat1.png', 'fp baru/agenda coklat2.png', 'fp baru/agenda coklat3.png'],
+        specs: ['Tas Ransel', 'Kotak Pensil', 'Buku Agenda', 'Material: Poliester'],
+        categoryLink: 'product-list.html?category=Agenda'
+    },
+    'Agenda 12': { 
+        name: 'agenda 12', 
+        category: 'Agenda',
+        images: ['fp baru/agenda blck1.png', 'fp baru/agenda blck2.png', 'fp baru/agenda blck3.png'],
+        specs: ['Tas Ransel', 'Kotak Pensil', 'Buku Agenda', 'Material: Poliester'],
+        categoryLink: 'product-list.html?category=Agenda'
+    },
+
+
+    // totebag
+
     'Totebag': { 
         name: 'Totebag', 
         category: 'Totebag',
@@ -221,6 +464,8 @@ const PRODUCTS = {
         specs: ['Ukuran Besar', 'Desain Etnik', 'Material: Kanvas Tebal'],
         categoryLink: 'product-list.html?category=Totebag'
     },
+
+    //tas
     'Pattern Series - Loopy': { 
         name: 'Pattern Series - Loopy', 
         category: 'Pattern Series',
@@ -228,24 +473,7 @@ const PRODUCTS = {
         specs: ['Desain Unik Loopy', 'Material: Kanvas Tebal', 'Cocok untuk berbagai keperluan'],
         categoryLink: 'product-list.html?category=Pattern Series'
     },
-   
-    // ... produk lainnya
-
-    // Tambahkan produk dummy untuk kategori baru
-    'Agenda': { 
-        name: 'Agenda', 
-        category: 'Agenda',
-        images: ['fp/agenda.png', 'fp/agenda2.png   ', 'fp/agenda3.png'],
-        specs: ['Tas Ransel', 'Kotak Pensil', 'Buku Agenda', 'Material: Poliester'],
-        categoryLink: 'product-list.html?category=Agenda'
-    },
-    'giftbox-premium': { 
-        name: 'Giftbox Premium', 
-        category: 'Hardbox',
-        images: ['fp/Box.png'],
-        specs: ['Gift Box eksklusif', 'Custom logo', 'Cocok untuk event perusahaan'],
-        categoryLink: 'product-list.html?category=Hardbox'
-    },
+    
     // ... produk lainnya
 };
 
@@ -261,6 +489,7 @@ const ALL_CATEGORY_SLUGS = [
     'payung', 
     'Pattern Series',
     'Totebag',
+    'Elektronik'
 ];
 
 
@@ -517,6 +746,47 @@ function handleProductDetail() {
     
     if (chatLink1) chatLink1.href = `${waBaseUrl}Halo%20Rifa%2C%20${encodedChatText}`;
 }
+function renderRelatedProducts() {
+    console.log("✅ renderRelatedProducts() dipanggil"); // Tambahan penting
+
+    const container = document.getElementById("related-products-grid");
+    if (!container) {
+        console.log("❌ Elemen related-products-grid tidak ditemukan");
+        return;
+    }
+
+    const allProducts = Object.entries(PRODUCTS);
+    if (allProducts.length === 0) {
+        console.log("❌ Data PRODUCTS kosong");
+        return;
+    }
+
+    const shuffled = allProducts.sort(() => 0.5 - Math.random());
+    const selected = shuffled.slice(0, 4);
+
+    container.innerHTML = selected.map(([id, product]) => `
+        <div class="product-card">
+            <a href="product-detail.html?id=${encodeURIComponent(id)}">
+                <div class="product-image">
+                    <img src="${product.images[0]}" alt="${product.name}">
+                </div>
+                <div class="product-info">
+                    <h3>${product.name}</h3>
+                    <p class="product-description">${product.category}</p>
+                </div>
+            </a>
+        </div>
+    `).join("");
+
+    console.log("✅ Produk rekomendasi berhasil dirender:", selected);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (window.location.pathname.includes("product-detail.html")) {
+        console.log("📄 Halaman product-detail terdeteksi");
+        renderRelatedProducts();
+    }
+});
 
 
 // ==========================================================
@@ -668,4 +938,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Panggil inisialisasi Stacking Carousel
     initPromoCarouselAnimation();
 });
-
